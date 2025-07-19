@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felpizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="divtitulo">
+        <img src="imagens/Felp’zzaria.png" width="100" height="90">
+    <h1>Restaurante</h1>
+    <div id="info">
+            <h2 style="color: white;" id="usuario">Usuário</h2>
+    <label><a href="carrinho.html"><img src="imagens/carrinho.png" width="50"></a></label>
+    </div>
+    </div> 
+
+    <main>
+        <div class="cardapio" id="baiaode2">
+            <img src="imagens/baiao2.jpg" class="imgprato" alt="Baião de Dois">
+            <h2>Baião de Dois</h2>
+            <p><b>Arroz, Feijão Verde, Bacon, Carne De Panela, Cenoura e Calabresa</b></p>
+            <h3>Preço: <b>35,00 R$</b></h3>
+        </div>
+
+        <div class="cardapio" id="feijoada">
+            <img src="imagens/feijoada.jpeg" class="imgprato" alt="Feijoada">
+            <h2>Feijoada</h2>
+            <p><b>Arroz, Feijão Preto, Bacon, Carne De Porco, Farofa e Calabresa</b></p>
+            <h3>Preço: <b>25,00 R$</b></h3>
+        </div>
+
+         <div class="cardapio" id="strogonoff">
+            <img src="imagens/strogonoff.jpg" alt="Strogonoff" class="imgprato" onclick="adicionarNoCarrinho('Strogonoff', 'Arroz, Frango Em Cubo, Batata Palha e Salada de Tomate', '30,00 R$', 'imagens/strogonoff.jpg')">
+            <h2>Strogonoff</h2>
+            <p><b>Arroz, Frango Em Cubo, Batata Palha e Salada de Tomate</b></p>
+            <h3>Preço: <b>30,00 R$</b></h3>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
