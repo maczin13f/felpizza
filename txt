@@ -1,0 +1,4 @@
+<p><b>Telefone</b></p>
+            <input type="tel" id="inputtel">
+            <p><b>Endereço</b></p>
+            <input type="text" id="inputendereço">

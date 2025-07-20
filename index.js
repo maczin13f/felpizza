@@ -12,3 +12,9 @@ function adicionarNoCarrinho(nome, descricao, preco, imagem) {
     carrinho.push(prato);
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
 }
+
+function removePedidos() {
+    localStorage.removeItem('carrinho')
+location.reload();
+
+}
