@@ -91,6 +91,4 @@ pratos.forEach(pratoDiv => {
   //  const pratoInfo = document.getElementById(idPrato + '-info');
   //  if (pratoInfo) {
     //  pratoInfo.style.display = '';
-    }
-  });
 });
