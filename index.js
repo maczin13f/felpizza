@@ -1,11 +1,14 @@
 //Responsavel por adicionar os Pratos Ao Carrinho//
 
-function adicionarNoCarrinho(nome, descricao, preco, imagem) {
+const inputQuantidade = document.createElement('input');
+
+function adicionarNoCarrinho(nome, descricao, preco, imagem, quantidade) {
     const prato = {
         nome: nome,
         descricao: descricao,
         preco: preco,
-        imagem: imagem
+        imagem: imagem,
+        quantidade: quantidade
     };
 
     let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];

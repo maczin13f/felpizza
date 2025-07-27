@@ -11,22 +11,24 @@ body {
 }
 
 .divtitulo h1 {
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     text-shadow: white;
+    display: none;
 }
 
 #info {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     position: relative;
-    left: 15%;
+    left: 8%;
 }
 
 #info h2 {
     text-shadow: black 1px 2px 1px;
     font-weight: bold;
+    font-size: 19px;
 }
 
 .imgprato {
@@ -38,7 +40,7 @@ body {
 
 #carrinho {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-top: 5%;
     gap: 25px;
@@ -47,9 +49,10 @@ body {
 .cardapioclone {
     border: solid black;
     border-radius: 32px;
-    width: 25%;
+    width: 50%;
     height: auto;
     padding: 8px;
     cursor: pointer;
     text-align: center;
+
 }

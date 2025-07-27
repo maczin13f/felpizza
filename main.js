@@ -1,4 +1,6 @@
 const data = new Date();
+let quantia = JSON.parse(localStorage.getItem('quantidade'));
+
 
 function obterDiaAtual() {
   const diaAtual = new Intl.DateTimeFormat('pt-BR', { weekday: 'long' }).format(data);
@@ -31,13 +33,18 @@ pratos.forEach(pratoDiv => {
   const botao = document.createElement('button');
   botao.textContent = 'Adicionar ao carrinho';
   botao.onclick = function () {
+    
+    const quantidadeSelecionada = Number(inputQuantidade.value);
+
+    
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     const jaExiste = carrinho.some(item => item.nome === nome && item.descricao === descricao);
     if (jaExiste) {
       alert(`O prato "${nome}" já foi adicionado ao carrinho.`);
       return;
+      
     }
-    adicionarNoCarrinho(nome, descricao, preco, imagem);
+    adicionarNoCarrinho(nome, descricao, preco, imagem, quantidadeSelecionada);
     atualizarContadorCarrinho();
   };
 
@@ -62,9 +69,11 @@ pratos.forEach(pratoDiv => {
   pratoDiv.appendChild(botao);
   pratoDiv.appendChild(inputQuantidade);
   pratoDiv.appendChild(btnQuantidade);
+  
+  const imgCardapio = pratoDiv.querySelector('.cardapio img')
 
   // Clique no prato mostra info
-  pratoDiv.addEventListener('click', function () {
+  imgCardapio.addEventListener('click', function () {
     // Esconde o cardápio principal
    secaoCardapio.style.display = 'none';
 

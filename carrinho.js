@@ -8,6 +8,15 @@
           <h2>${prato.nome}</h2>
           <p><b>${prato.descricao}</b></p>
           <h3>Preço: <b>${prato.preco}</b></h3>
+          <div class ='informacoesAdicionais'>
+          <h3>Quantidade:<b>${prato.quantidade}</b></h3>
+          </div>
+          
+          {
+            constructor() {
+              this.prop = ""
+            }
+          }>
         </div>
       `).join('');
     } else {
