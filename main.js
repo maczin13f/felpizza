@@ -72,23 +72,4 @@ pratos.forEach(pratoDiv => {
   pratoDiv.appendChild(btnQuantidade);
   
   const imgCardapio = pratoDiv.querySelector('.cardapio img')
-
-  // Clique no prato mostra info
- //imgCardapio.addEventListener('click', function () {
-    // Esconde o cardápio principal
-  // secaoCardapio.style.display = 'none';
-
-    // Mostra a seção de info
-   // secaoInfo.style.display = '';
-
-    // Esconde todas as infos
-  //  pratosInfo.forEach(info => {
-    //  info.style.display = 'none';
-   // });
-
-    // Mostra a info do prato clicado
-   // const idPrato = this.id;
-  //  const pratoInfo = document.getElementById(idPrato + '-info');
-  //  if (pratoInfo) {
-    //  pratoInfo.style.display = '';
 });
