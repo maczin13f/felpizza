@@ -36,6 +36,7 @@ pratos.forEach(pratoDiv => {
     
     const quantidadeSelecionada = Number(inputQuantidade.value);
 
+ inputQuantidade.value = 1;
     
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     const jaExiste = carrinho.some(item => item.nome === nome && item.descricao === descricao);
